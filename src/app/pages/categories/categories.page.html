@@ -5,9 +5,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let category of categories">
-      {{ category.name }}
-    </ion-item>
-  </ion-list>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="calculators">
+        <ion-label>Calculators</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="pin-outs">
+        <ion-label>Pin-Outs</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+
+    <ion-router-outlet></ion-router-outlet>
+  </ion-tabs>
 </ion-content>

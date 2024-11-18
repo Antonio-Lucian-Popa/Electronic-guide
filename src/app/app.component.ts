@@ -13,8 +13,8 @@ export class AppComponent {
   }
 
   async initializeApp() {
-    await this.dbService.initializeDatabase();
-    await this.dbService.createTables();
-    await this.dbService.populateDatabase();
+  //  await this.dbService.initializeDatabase();
+    // await this.dbService.createTables();
+    // await this.dbService.populateDatabase();
   }
 }

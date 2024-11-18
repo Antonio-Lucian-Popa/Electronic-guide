@@ -11,8 +11,7 @@ export class CategoriesPage implements OnInit {
   categories: any[] = [];
 
   constructor(private dbService: DatabaseService) {}
-
-  async ngOnInit() {
-    this.categories = await this.dbService.getCategories();
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 }
