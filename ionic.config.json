@@ -1,0 +1,7 @@
+{
+  "name": "electronic-guide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
