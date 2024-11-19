@@ -1,0 +1,9 @@
+.custom-list {
+  position: relative; /* Asigurăm că z-index funcționează */
+  z-index: 10; /* Mai mare decât z-index-ul implicit al ion-nav */
+}
+
+ion-nav {
+  position: relative; /* Dacă ion-nav are z-index mare, îl putem controla aici */
+  z-index: 1; /* Setăm un z-index mai mic pentru a nu acoperi ion-list */
+}

@@ -5,18 +5,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item routerLink="/tabs/tab1/resistor-color-code">
-      <ion-icon name="color-palette-outline" slot="start"></ion-icon>
-      Resistor Color Code
+  <ion-list class="custom-list">
+    <ion-item>
+      <ion-nav-link router-direction="forward" [component]="ResistorColorCodeComponent">
+        <ion-icon name="color-palette-outline" slot="start"></ion-icon>
+        Resistor Color Code
+      </ion-nav-link>
     </ion-item>
-    <ion-item routerLink="/tabs/tab1/ohms-law">
-      <ion-icon name="speedometer-outline" slot="start"></ion-icon>
-      Ohm's Law
+    <ion-item>
+      <ion-nav-link router-direction="forward" [component]="OhmsLawComponent">
+        <ion-icon name="speedometer-outline" slot="start"></ion-icon>
+        Ohm's Law
+      </ion-nav-link>
     </ion-item>
-    <ion-item routerLink="/tabs/tab1/inductor-color-code">
-      <ion-icon name="radio-outline" slot="start"></ion-icon>
-      Inductor Color Code
+    <ion-item>
+      <ion-nav-link router-direction="forward" [component]="InductorColorCodeComponent">
+        <ion-icon name="radio-outline" slot="start"></ion-icon>
+        Inductor Color Code
+      </ion-nav-link>
     </ion-item>
   </ion-list>
+
+  <!-- Nav container (fără root implicit) -->
+  <ion-nav></ion-nav>
 </ion-content>
